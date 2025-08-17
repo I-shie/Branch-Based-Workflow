@@ -1,0 +1,12 @@
+name: Branch Based Workflow
+on: 
+  push:
+    branches: 
+      -  feature
+jobs:
+  j1:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: Print Hello
+      -  run: echo "Hello world!"
+  
